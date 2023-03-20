@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="menu.js" type="text/javascript"></script>
+
+	
+<style type="text/css">
+
+	
+body{
+	
+	font-family: Poppins, san-serif;
+	font-size: 14px;
+	margin:0;
+	padding: 0;
+	font-weight: 400;
+	color: black; 
+
+}
+
+.page{
+	position: relative;
+	max-width: 1440px;
+	width:100%;
+	display: inline-block;
+	
+}
+.topofpage{
+	position: sticky;
+	top:0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100px;
+	background-color: #020a39;
+	z-index: 100;
+
+}
+.navbar{
+	margin-left: 200px;
+	margin-right: 200px;
+	flex-grow: 1;
+	text-align: center;
+	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+}
+.nav{
+	flex-grow: 1;
+	text-align: center;
+	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+
+}
+.nav-mobile{
+	background-color: #020a39;
+	margin-top: 150px;
+	display: block;
+	height: 800x;
+	width: 300px;
+	padding: 200px;
+	text-align: center;
+	float: center;
+
+	}
+#menu img{
+	width: 40px;
+	margin-left: 20px;
+	float: leftt;
+	display: inline-block;
+	cursor: pointer;
+		
+}
+#menyoverlay{
+	position: absolute;
+	top: 0;
+	background-color: #020a39;
+	width: 100%; 
+	height: 98vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	z-index: 110;
+	text-align: center;
+	color: white;
+	
+	}
+#close{
+	position: absolute;
+	top: 10px;
+	right: 50px;
+	font-size: 50px;
+	color: white;
+	
+	}
+.logo{
+	max-width: 100px;
+	text-align: left;
+	color: white;
+	
+}
+.logo_img{
+		margin-left: 30px;
+		width: 110%;
+	}
+.search{
+	align-content: flex-end;
+	margin-left: auto; 
+	max-width: 75px;
+
+}
+.search_img{
+	width: 50%;
+	
+}
+.linkspecial{
+	color: rgb(127, 234, 237);
+	text-decoration: underline;
+	
+		
+	}	
+.contentblock1{
+	position: relative;
+	background-image: url("img/Yellowjackets.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+
+	}
+	
+.contentblocktext{
+	position: relative;
+	top: 500px;
+	color: white;
+	font-size: 60px;
+	background-color: #3673F6;
+	height: 300px;
+	width: 100%;
+	text-align: left;
+	
+}
+.contentblock2{
+	position: relative;
+	top: 300px;
+	background-image: url("img/Tulsaking.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	
+	}
+.contentblocktext2{
+	position: relative;
+	top: 500px;
+	color: white;
+	font-size: 60px;
+	background-color: #183E87;
+	height: 300px;
+	width: 100%;
+	text-align:right;
+	
+	}
+	
+.contentblock3{
+	position: relative;
+	top: 600px;
+	background-image: url("img/1883.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	
+	}
+
+@media screen and (max-width: 850px){
+		
+	.page{
+		max-width: 450px;
+	}
+	#menu{
+		display: inline-block;
+	
+	}
+	.navbar{
+		display: none;
+	}
+	.logo{
+		display: none;
+	}
+}
+@media screen and (min-width: 450px) and (max-width:800px){
+		.page{
+		max-width: 850px;
+		}
+	.nav-mobile{
+		display: none;
+		}
+
+	}
+@media screen and (min-width: 805px) and (max-width:1250px){
+		.page{
+		max-width: 1250px;
+		}
+		#menu{
+		display: none;
+		}
+		.nav-mobile{
+		display: none;
+		}
+	}
+@media screen and (min-width: 1450px){
+		.page{
+		max-width: 1450px;
+		}
+		#menu{
+		display: none;
+		}
+		.nav-mobile{
+		display: none;
+		}
+	}
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+	margin-right: 20px;
+
+
+		
+</style>
+	
+</head>
+
+<body>
+
+	
+<div class="topofpage">
+		<div class="logo"> <a href="index.html"> <img src="img/logo.svg" class="logo_img" border="o" /></a></div>
+	
+<div id="menu" onclick="showmenu();"> 	
+	<div id="menuoverlay"> </div>
+				 	
+			<a href="about.html">About</a>
+			<a href="globalbrands.html">Global Brands</a>
+			<a href="news.html">News</a>
+			<a href="careers.html">Careers</a>
+			<a href="investors.html">Investors</a>
+			<a href="paramount+.html" class="linkspecial">Paramount+</a>
+"linkspecial">Paramount+</a>
+		<div id="close" onclick="hidemenu();">&times;</div>
+			</div>
+	
+			
+			
+		<div class="navbar">
+				
+			<div class="nav"> <a href="about.html"> About</a></div>
+			<div class="nav"> <a href="globalbrands.html">Global Brands</a></div> 
+			<div class="nav"> <a href="news.html">News</a></div>
+			<div class="nav"> <a href="careers.html">Careers</a></div>
+			<div class="nav"> <a href="investors.html">Investors</a></div>
+			<div class="nav"> <a href="paramount+.html" class="linkspecial">Paramount+</a></div>
+				
+	
+			</div>
+	</div>
+
+
+	<div class="page">
+	<div class="contentblock1">
+		<div class="contentblocktext">
+		CONNECTING WITH <br> EVERYONE, EVERYWHERE
+		</div>
+	</div>
+	
+	<div class="contentblock2">
+		<div class="contentblocktext2">
+		OUR SHOWS ALL <br>  IN ONE SIMPLE PLACE
+		</div>
+	</div>
+		
+	<div class="contentblock3">
+		<div class="contentblocktext">
+		STREAM NOW <br> WITH PARAMOUNT+
+		</div>
+	</div>
+	</div>
+	
+	
+	
+</body>
+</html>
